@@ -2,47 +2,55 @@ package CRUD.usuario;
 
 public class Usuario {
 
-    int id;
+    int matricula;
     String nombre;
-    String correo;
+    String apellido;
+    String telefono;
 
-    public Usuario(int id, String nombre, String correo) {
-        this.id = id;
+    public Usuario(int matricula, String nombre, String apellido, String telefono) {
+        this.matricula = matricula;
         this.nombre = nombre;
-        this.correo = correo;
+        this.apellido = apellido;
+        this.telefono = telefono;
     }
 
     public Usuario() {
 
     }
 
-
-    public int getId() {
-        return id;
+    public int getMatricula() {
+        return matricula;
     }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
 
     public String getNombre() {
         return nombre;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
 
+    public String getTelefono() {
+        return telefono;
+    }
 
-//getters, setters and toString()
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
 
 }
